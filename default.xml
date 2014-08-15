@@ -12,6 +12,12 @@
   <remote name="gh"
            fetch="https://github.com/" />
            
+  <remote name="androidarmv6"
+          fetch="git://github.com/androidarmv6/" />
+          
+  <remote name="CRX"
+          fetch="git://github.com/CRXTeam/" />
+           
   <remote name="aosb-lg"
           fetch="https://github.com/aosb-lg" />
           
