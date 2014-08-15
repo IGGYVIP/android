@@ -21,6 +21,9 @@
   <remote name="aosb-lg"
           fetch="https://github.com/aosb-lg" />
           
+<remote name="cr3pt"
+          fetch="https://github.com/cr3pt" />
+          
   <remote name="ls"
           fetch="git://github.com/LiquidSmooth" />
 
