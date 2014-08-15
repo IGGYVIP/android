@@ -5,34 +5,5 @@ mkdir ~probam
 cd ~probam
 From your probam directory, execute the following to pull all source code from github:
 
-repo init -u https://github.com/AOSB/android.git
+repo init -u https://github.com/aosb-lg/android.git
 ```    
-Modify your `.repo/local_manifest.xml` as follows (Note2 example):
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <project name="AOSB/android_device_samsung_n7100" path="device/samsung/n7100" remote="github" />
-  <project name="AOSB/android_device_samsung_t0lte" path="device/samsung/t0lte" remote="github" />  
-  <project name="AOSB/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" />
-  <project name="AOSB/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" />
-  <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
-  <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
-</manifest>
-```
-
-
-```
-repo sync
-vendor/cm/get-prebuilts
-```
-
-Building Instructions
-=======================
-```
-
-source build/envsetup.sh
-breakfast n7100
-brunch n7100
-```
-=======
