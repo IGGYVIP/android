@@ -8,6 +8,15 @@
   <remote  name="github"
            fetch=".."
            review="review.cyanogenmod.org" />
+           
+  <remote name="gh"
+           fetch="https://github.com/" />
+           
+  <remote name="aosb-lg"
+          fetch="https://github.com/aosb-lg" />
+          
+  <remote name="ls"
+          fetch="git://github.com/LiquidSmooth" />
 
   <remote name="private" 
           fetch="ssh://git@bitbucket.org/aosb" />
@@ -26,14 +35,14 @@
 
 
   <!-- Android Open Source Blitz Start -->
-  <project path="build" name="android_build" remote="AOSB" revision="master" >
+  <project path="build" name="android_build" remote="aosb-lg" revision="master" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <project path="android" name="android" remote="AOSB" revision="master" />
-  <project path="bionic" name="android_bionic" remote="AOSB" revision="master" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="AOSB" revision="master" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="AOSB" revision="android-4.4"  />
+  <project path="bionic" name="AOSPAL/android_bionic" remote="gh" revision="kitkat" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="aosb-lg" revision="kk44" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="aosb-lg" revision="android-4.4"  />
   <project path="frameworks/native" name="android_frameworks_native" remote="AOSB" revision="master" />
   <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="AOSB" revision="master" />
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="AOSB" revision="master" />
@@ -49,7 +58,6 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="AOSB" revision="master"  />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="AOSB" revision="master" />
   <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="AOSB" revision="master" />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="AOSB" revision="master"/>
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="AOSB" revision="master" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="AOSB" revision="master" />
   <project path="system/core" name="android_system_core" remote="AOSB" revision="master" />
@@ -57,7 +65,7 @@
   <project path="vendor/cm" name="android_vendor_cm" remote="AOSB" revision="vendor"  />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="AOSB" revision="master" />
   <project path="packages/apps/GPSOptimizer" name="android_packages_apps_GPSOptimizer" remote="AOSB" revision="master" />
-  <project path="packages/apps/AndroidKernelTweaker" name="android_kernel_tweaker" remote="AOSB" revision="master" />
+  <project path="packages/apps/AndroidKernelTweaker" name="android_kernel_tweaker" remote="aosb-lg" revision="kk44" />
   <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="AOSB" revision="master" />
   <project path="packages/apps/AOSBota" name="android_packages_apps_AOSBota" remote="AOSB" revision="master" />
   <project path="packages/apps/EOSWeather" name="android_packages_apps_EOSWeather" remote="AOSB" revision="kk4.4" />
@@ -424,15 +432,15 @@
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" groups="pdk" />
   <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom" />
-  <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" groups="caf" />
+  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="ls" revision="kitkat" />
   <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="CyanogenMod/android_hardware_qcom_camera" groups="qcom" />
   <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom" />
-  <project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" groups="caf" />
-  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" />
+  <project path="hardware/qcom/display-caf" name="aosb-lg/android_hardware_qcom_display-caf" groups="caf" />
+  <project path="hardware/qcom/gps" name="CyanogenMod//android_hardware_qcom_gps" groups="qcom" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom" />
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" />
-  <project path="hardware/qcom/media-caf" name="CyanogenMod/android_hardware_qcom_media-caf" groups="caf" />
+  <project path="hardware/qcom/media-caf" name="aosb-lg/android_hardware_qcom_media-caf" groups="caf" />
   <project path="hardware/qcom/msm8960" name="CyanogenMod/android_hardware_qcom_msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8x74" name="CyanogenMod/android_hardware_qcom_msm8x74" groups="qcom_msm8x74" />
   <project path="hardware/qcom/power" name="CyanogenMod/android_hardware_qcom_power" />
@@ -508,8 +516,28 @@
   <!-- CyanogenMod End -->
 
   <!-- Omnirom Start -->
+  <project path="packages/providers/DownloadProvider" name="omnirom/android_packages_providers_DownloadProvider" remote="gh" revision="android-4.4" />
   <project path="packages/apps/PerformanceControl" name="omnirom/android_packages_apps_PerformanceControl" remote="github" revision="android-4.4" />
   <!-- Omnirom End -->
 
   <project path="frameworks/opt/cards" name="SlimRoms/frameworks_opt_cards" remote="github" revision="kk4.4" />
+  
+  <!-- UberUtils -->
+<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="UBERUTILS/arm-linux-androideabi-4.7" remote="gh" revision="master" />
+<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERUTILS/arm-linux-androideabi-4.8" remote="gh" revision="master" />
+<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERUTILS/arm-linux-androideabi-4.9" remote="gh" revision="master" />
+<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.10" name="UBERUTILS/arm-linux-androideabi-4.10" remote="gh" revision="master" />
+<project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.7" name="UBERUTILS/arm-eabi-4.7" remote="gh" revision="master" />
+<project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.8" name="UBERUTILS/arm-eabi-4.8" remote="gh" revision="master" />
+<project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.9" name="UBERUTILS/arm-eabi-4.9" remote="gh" revision="master" />
+<project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.10" name="UBERUTILS/arm-eabi-4.10" remote="gh" revision="master" />
+
+ <!-- LG devices -->
+<project path="vendor/lge" name="proprietary_vendor_lge" revision="kk44" remote="aosb-lg"/>
+<project path="device/lge/p700" name="android_device_lge_p700" revision="kk44" remote="aosb-lg"/>
+<project path="device/lge/p705" name="android_device_lge_p705" revision="kk44" remote="aosb-lg"/>
+<project path="device/lge/e610" name="android_device_lge_e610" revision="kk44" remote="aosb-lg"/>
+<project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="kk44" remote="aosb-lg"/>
+<project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="kk44" remote="aosb-lg"/>
+
 </manifest>
