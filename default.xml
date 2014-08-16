@@ -548,15 +548,9 @@
  <!-- slim -->
   <project path="frameworks/opt/cards" name="SlimRoms/frameworks_opt_cards" remote="github" revision="kk4.4" />
   
-  <!-- UberUtils -->
-<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="UBERUTILS/arm-linux-androideabi-4.7" remote="gh" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERUTILS/arm-linux-androideabi-4.8" remote="gh" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERUTILS/arm-linux-androideabi-4.9" remote="gh" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.10" name="UBERUTILS/arm-linux-androideabi-4.10" remote="gh" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.7" name="UBERUTILS/arm-eabi-4.7" remote="gh" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.8" name="UBERUTILS/arm-eabi-4.8" remote="gh" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.9" name="UBERUTILS/arm-eabi-4.9" remote="gh" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.10" name="UBERUTILS/arm-eabi-4.10" remote="gh" revision="master" />
+  <!-- GOOGLE GCC TOOLCHAIN -->
+<project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />
+<project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="aosp" revision="master" />
 
  <!-- LG devices (dont use that now)
 <project path="vendor/lge" name="proprietary_vendor_lge" revision="kk44" remote="aosb-lg"/>
