@@ -523,27 +523,13 @@
   <project path="packages/apps/PerformanceControl" name="omnirom/android_packages_apps_PerformanceControl" remote="github" revision="android-4.4" />
   <!-- Omnirom End -->
   
-  <!-- save for now
+  <!-- nedded files -->
   <project path="external/chromium" name="CyanogenMod/android_external_chromium" />
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="AOSB" revision="master" />
   <project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview" />
   <project path="hardware/qcom/media-caf" name="aosb-lg/android_hardware_qcom_media-caf" groups="caf" />
   <project path="hardware/qcom/display-caf" name="aosb-lg/android_hardware_qcom_display-caf" groups="caf" />
   <project path="frameworks/av" name="android_frameworks_av" remote="aosb-lg" revision="kk44" />
-  -->
-  
-  <!-- L7 test --> 
-<project path="vendor/lge" name="proprietary_vendor_lge" revision="kk44" remote="aosb-lg"/>
-<project path="external/chromium" name="android_external_chromium" remote="androidarmv6" revision="cm-11.0" />
-<project path="external/webkit" name="android_external_webkit" remote="androidarmv6" revision="cm-11.0" />
-<project path="frameworks/webview" name="android_frameworks_webview" remote="androidarmv6" revision="cm-11.0" />
-<project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="androidarmv6" revision="cm-11.0" />
-<project path="device/lge/p700" name="android_device_lge_p700" revision="kitkat" remote="CRX"/>
-<project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="kitkat" remote="CRX"/>
-<project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="android-msm-3.4-kk-extra" remote="CRX"/>
-<project path="frameworks/av" name="android_frameworks_av" remote="cr3pt" revision="cm-11.0" />
-<project path="hardware/qcom/display-caf" name="zodex/android_hardware_qcom_display-caf" groups="caf" />
-<project path="hardware/qcom/media-caf" name="cr3pt/android_hardware_qcom_media-caf" groups="caf" />
   
  <!-- slim -->
   <project path="frameworks/opt/cards" name="SlimRoms/frameworks_opt_cards" remote="github" revision="kk4.4" />
@@ -552,13 +538,12 @@
 <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />
 <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="aosp" revision="master" />
 
- <!-- LG devices (dont use that now)
+ <!-- LG devices --> 
 <project path="vendor/lge" name="proprietary_vendor_lge" revision="kk44" remote="aosb-lg"/>
 <project path="device/lge/p700" name="android_device_lge_p700" revision="kk44" remote="aosb-lg"/>
 <project path="device/lge/p705" name="android_device_lge_p705" revision="kk44" remote="aosb-lg"/>
 <project path="device/lge/e610" name="android_device_lge_e610" revision="kk44" remote="aosb-lg"/>
 <project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="kk44" remote="aosb-lg"/>
 <project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="kk44" remote="aosb-lg"/>
---> 
 
 </manifest>
