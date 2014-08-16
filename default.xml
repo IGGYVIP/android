@@ -539,7 +539,7 @@
 <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="aosp" revision="master" />
 
  <!-- LG devices --> 
-<project path="vendor/lge" name="proprietary_vendor_lge" revision="kk44" remote="aosb-lg"/>
+<project path="vendor/lge" name="TeamHackLG/proprietary_vendor_lge" revision="cm-11.0" remote="gh"/>
 <project path="device/lge/p700" name="android_device_lge_p700" revision="kk44" remote="aosb-lg"/>
 <project path="device/lge/p705" name="android_device_lge_p705" revision="kk44" remote="aosb-lg"/>
 <project path="device/lge/e610" name="TeamHackLG/android_device_lge_e610" revision="cm-11.0" remote="gh"/>
