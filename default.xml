@@ -4,7 +4,10 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
-
+           
+<remote  name="cesco89"
+           fetch="https://githun.com/cesco89" />
+           
   <remote  name="github"
            fetch=".."
            review="review.cyanogenmod.org" />
