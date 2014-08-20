@@ -6,7 +6,7 @@
            review="android-review.googlesource.com" />
            
 <remote  name="cesco89"
-           fetch="https://githun.com/cesco89" />
+           fetch="https://github.com/cesco89" />
            
   <remote  name="github"
            fetch=".."
