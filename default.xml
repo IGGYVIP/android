@@ -72,7 +72,7 @@
   <project path="vendor/cm" name="android_vendor_cm" remote="AOSB" revision="vendor"  />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="AOSB" revision="master" />
   <project path="packages/apps/GPSOptimizer" name="android_packages_apps_GPSOptimizer" remote="AOSB" revision="master" />
-  <project path="packages/apps/AndroidKernelTweaker" name="android_kernel_tweaker" remote="aosb-lg" revision="kk44" />
+  <project path="packages/apps/AndroidKernelTweaker" name="android_kernel_tweaker" remote="cesco89" revision="master" />
   <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="AOSB" revision="master" />
   <project path="packages/apps/AOSBota" name="android_packages_apps_AOSBota" remote="AOSB" revision="master" />
   <project path="packages/apps/EOSWeather" name="android_packages_apps_EOSWeather" remote="AOSB" revision="kk4.4" />
