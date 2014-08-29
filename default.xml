@@ -44,6 +44,9 @@
 
   <remote  name="AOSB"
            fetch="https://github.com/AOSB" />
+           
+ <remote  name="CyanogenMod"
+           fetch="https://github.com/CyanogenMod" />
 
 
   <!-- Android Open Source Blitz Start -->
