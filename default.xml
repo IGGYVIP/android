@@ -49,40 +49,32 @@
            fetch="https://github.com/CyanogenMod" />
 
 
-  <!-- Android Open Source Blitz Start -->
-  <project path="build" name="android_build" remote="AOSB" revision="master" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-
-  <project path="android" name="android" remote="AOSB" revision="master" />
+  
+  <project path="android" name="android" remote="CyanogenMod" revision="master" />
   <project path="bionic" name="AOSPAL/android_bionic" remote="gh" revision="kitkat" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="aosb-lg" revision="android-4.4"  />
-  <project path="frameworks/native" name="android_frameworks_native" remote="AOSB" revision="master" />
-  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="AOSB" revision="master" />
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="AOSB" revision="master" />
-  <project path="packages/apps/CMWallpapers" name="android_packages_apps_CMWallpapers" remote="AOSB" revision="master" />
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="AOSB" revision="master" />
-  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="AOSB" revision="master" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="AOSB" revision="master" />
-  <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="AOSB" revision="master" />
-  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="AOSB" revision="master" />
-  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="AOSB" revision="master" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="otl5" revision="android-4.4"  />
+  <project path="frameworks/native" name="android_frameworks_native" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="omnirom" revision="android-4.4" />
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/apps/CMWallpapers" name="android_packages_apps_CMWallpapers" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="CyanogenMod" revision="cm-11.0" />
   <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="CyanogenMod" revision="cm-11.0" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="AOSB" revision="master"  />
-  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="AOSB" revision="master" />
-  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="AOSB" revision="master" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="AOSB" revision="master" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="AOSB" revision="master" />
-  <project path="system/core" name="android_system_core" remote="AOSB" revision="master" />
-  <project path="system/media" name="android_system_media" remote="AOSB" revision="master" />
-  <project path="vendor/cm" name="android_vendor_cm" remote="AOSB" revision="vendor"  />
-  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="AOSB" revision="master" />
-  <project path="packages/apps/GPSOptimizer" name="android_packages_apps_GPSOptimizer" remote="AOSB" revision="master" />
-  <project path="packages/apps/AndroidKernelTweaker" name="android-kernel-tweaker" remote="cesco89" revision="master" />
-  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="AOSB" revision="master" />
-  <project path="packages/apps/AOSBota" name="android_packages_apps_AOSBota" remote="AOSB" revision="master" />
-  <project path="packages/apps/EOSWeather" name="android_packages_apps_EOSWeather" remote="AOSB" revision="kk4.4" />
-  <!-- Android Open Source Blitz End -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="CyanogenMod" revision="cm-11.0"  />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="system/core" name="android_system_core" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="system/media" name="android_system_media" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="vendor/cm" name="android_vendor_cm" remote="CyanogenMod" revision="vendor"  />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="CyanogenMod" revision="cm-11.0" />
+
+  <project path="packages/apps/Torch" name="android_packages_apps_Lightbulb" remote="AOSPA" revision="kitkat" />  <!-- Android Open Source Blitz End -->
 
   <!-- AOSP Start -->
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.4.4_r2" groups="cts" />
@@ -204,9 +196,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <!-- AOSP End -->
 
-  <!-- ChameleonOS Start -->
-  <project path="packages/apps/ScreenRecorder" name="android_packages_apps_ScreenRecorder" remote="ChameleonOS" revision="kitkat" />
-  <!-- ChameleonOS End -->
+  
 
   <!-- CyanogenMod Start -->
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
@@ -529,13 +519,7 @@
   <project path="packages/apps/PerformanceControl" name="omnirom/android_packages_apps_PerformanceControl" remote="github" revision="android-4.4" />
   <!-- Omnirom End -->
   
-  <!-- nedded files -->
-  <project path="external/chromium" name="CyanogenMod/android_external_chromium" />
-  <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="AOSB" revision="master" />
-  <project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview" />
-  <project path="hardware/qcom/media-caf" name="TeamHackLG/android_hardware_qcom_media-caf" groups="caf" />
-  <project path="hardware/qcom/display-caf" name="TeamHackLG/android_hardware_qcom_display-caf" groups="caf" />
-  <project path="frameworks/av" name="TeamHackLG/android_frameworks_av" remote="gh"/>
+  
   
  <!-- slim -->
   <project path="frameworks/opt/cards" name="SlimRoms/frameworks_opt_cards" remote="github" revision="kk4.4" />
@@ -544,12 +528,5 @@
 <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />
 <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="aosp" revision="master" />
 
- <!-- LG devices --> 
-<project path="vendor/lge" name="TeamHackLG/proprietary_vendor_lge" revision="cm-11.0" remote="gh"/>
-<project path="device/lge/p700" name="android_device_lge_p700" revision="kk44" remote="aosb-lg"/>
-<project path="device/lge/p705" name="android_device_lge_p705" revision="kk44" remote="aosb-lg"/>
-<project path="device/lge/e610" name="TeamHackLG/android_device_lge_e610" revision="cm-11.0" remote="gh"/>
-<project path="device/lge/msm7x27a-common" name="TeamHackLG/android_device_lge_msm7x27a-common" revision="cm-11.0" remote="gh"/>
-<project path="kernel/lge/msm7x27a-common" name="TeamHackLG/lge-kernel-lproj" revision="kk-2.7-kgsl" remote="gh"/>
 
 </manifest>
