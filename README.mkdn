@@ -3,7 +3,7 @@ Android Open Source BAM MANIFEST !
 ```
 mkdir ~OROM
 cd ~OROM
-From your probam directory, execute the following to pull all source code from github:
+From your OROM directory, execute the following to pull all source code from github:
 
 repo init -u https://github.com/aosb-lg/android.git
 ```    
